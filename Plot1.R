@@ -1,16 +1,3 @@
-##################################################################
-##                       General settings                       ##
-##################################################################
-
-setwd("Desktop/Programmierung/R/Coursera/04_Exploratory Data Analysis")
-
-##load libraries
-library(tidyverse)
-library(lubridate)
-
-library(readr)
-
-############################################################################
 ############################################################################
 ###                                                                      ###
 ###                             Plot 1                                   ###
@@ -28,12 +15,12 @@ png(file="03_Output/plot1.png"
     ,height=480)
 
 ##---------------------------------------------------------------
-##                   Create Plot                                -
+##                   Create Histogram                           -
 ##---------------------------------------------------------------
 hist(data$Global_active_power
      , col = "red"
      , ylab = "Frequency"
-     , xlab = "Global Active Power (kilowatts)"
+     ,xlab = "Global Active Power (kilowatts)"
      , main = "Global Active Power ")
 
 ##---------------------------------------------------------------
