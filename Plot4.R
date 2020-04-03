@@ -19,8 +19,8 @@ par(mfrow = c(2,2))
 ##---------------------------------------------------------------
 ##                      Create the first Plot                   -
 ##---------------------------------------------------------------
-plot(plotdata$DateTime
-     , plotdata$Global_active_power
+plot(data$DateTime
+     , data$Global_active_power
      , type = "l"
      , ylab = "Global Active Power"
      , xlab = "")
@@ -28,8 +28,8 @@ plot(plotdata$DateTime
 ##---------------------------------------------------------------
 ##                      Create the second Plot                   -
 ##---------------------------------------------------------------
-plot(plotdata$DateTime
-     , plotdata$Voltage
+plot(data$DateTime
+     , data$Voltage
      , type = "l"
      , ylab = "Voltage"
      , xlab = "datetime")
@@ -37,16 +37,16 @@ plot(plotdata$DateTime
 ##---------------------------------------------------------------
 ##                      Create the third Plot                   -
 ##---------------------------------------------------------------
-plot(plotdata$DateTime
-     , plotdata$Sub_metering_1
+plot(data$DateTime
+     , data$Sub_metering_1
      , type = "l"
      , ylab = "Energy sub metering"
      , xlab = "")
-lines(plotdata$DateTime,
-      plotdata$Sub_metering_2 
+lines(data$DateTime,
+      data$Sub_metering_2 
       ,col="Red")
-lines(plotdata$DateTime
-      , plotdata$Sub_metering_3 
+lines(data$DateTime
+      , data$Sub_metering_3 
       ,col="Blue")
 
 #Legend
@@ -61,8 +61,8 @@ legend("topright"
 ##                      Create the last Plot                    -
 ##---------------------------------------------------------------
 
-plot(plotdata$DateTime
-     , plotdata$Global_reactive_power
+plot(data$DateTime
+     , data$Global_reactive_power
      , type = "l"
      , ylab = "Global_reactive_power"
      , xlab = "datetime")
