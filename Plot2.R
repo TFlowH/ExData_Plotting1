@@ -27,7 +27,7 @@ library(readr)
 png(file="plot2.png",width=480,height=480)
 
 ##---------------------------------------------------------------
-##                   Create Histogram                           -
+##                   Create Plot                        -
 ##---------------------------------------------------------------
 plot(data$DateTime
      , data$Global_active_power
