@@ -11,16 +11,26 @@
 ##################################################################
 ##                       Start the Plot                         ##
 ##################################################################
-png(file="03_Output/plot3.png",width=480,height=480)
+png(file="03_Output/plot3.png"
+    ,width=480
+    ,height=480)
 
 ##---------------------------------------------------------------
 ##                      Create Plot                             -
 ##---------------------------------------------------------------
 par(mfrow=c(1,1))
 
-plot(data$DateTime, data$Sub_metering_1 , type = "l", ylab = "Energy sub metering", xlab = "")
-lines(data$DateTime, data$Sub_metering_2 ,col="Red")
-lines(data$DateTime, data$Sub_metering_3 ,col="Blue")
+plot(data$DateTime
+     , data$Sub_metering_1 
+     , type = "l"
+     , ylab = "Energy sub metering"
+     , xlab = "")
+lines(data$DateTime
+      , data$Sub_metering_2
+      ,col="Red")
+lines(data$DateTime
+      , data$Sub_metering_3 
+      ,col="Blue")
 
 
 ##---------------------------------------------------------------
