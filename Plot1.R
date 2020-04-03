@@ -28,7 +28,7 @@ png(file="03_Output/plot1.png"
     ,height=480)
 
 ##---------------------------------------------------------------
-##                   Create Histogram                           -
+##                   Create Plot                                -
 ##---------------------------------------------------------------
 hist(data$Global_active_power
      , col = "red"
