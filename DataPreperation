@@ -48,4 +48,4 @@ data_raw <- read_delim("02_Daten/household_power_consumption.txt"
 
 data_raw$Date <- as.Date(data_raw$Date,"%d/%m/%Y")
 data <- filter(data_raw, Date %in% as.Date(c("2007-02-01","2007-02-02")))
-
+data$DateTime <- as.POSIXct(paste(data$Date, data$Time), format="%Y-%m-%d %H:%M:%S")
